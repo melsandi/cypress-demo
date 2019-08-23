@@ -4,6 +4,7 @@
   "description": "ui-tests-demo",
   "main": "index.js",
   "scripts": {
+    "cypress:ci": "cypress run",
     "test": "cypress run --reporter mochawesome",
     "cy": "cypress open",
     "mochawesome": "npx mochawesome-merge --reportDir cypress/results > mochawesome.json && npx mochawesome-report-generator mochawesome.json",
